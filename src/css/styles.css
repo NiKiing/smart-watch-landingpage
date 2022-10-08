@@ -10,12 +10,14 @@
     box-sizing: border-box;
     font-family: 'Inter Tight', sans-serif;
 }
+
 body{
     background-image: url("../assets/img/img-background.png");
-    height: 100vh;
-    background-position:inherit;
+    height: 120vh;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 header{
     width: 100%;
@@ -34,14 +36,16 @@ header nav{
     height: 60px;
     border-radius: 200px;
 }
-
+header nav .left-section a{
+    text-decoration: none;
+}
 header nav .left-section span{
     font-size: 1.5rem;
     color: var(--just-white);
 }
 
-header nav .right-section a,
-footer .container-content-footer .buy-btn--footer a{
+
+header nav .right-section a{
     border-radius: 20px;
     padding: 8px 40px;
     color: var(--just-black);
@@ -55,31 +59,38 @@ main .hero .container-hero{
     position: relative;
     display: flex;
     justify-content: center;
-    height: 75vh;
-    padding-top: 8%;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 3%;
+    padding-right: 1%;
 }
 
-main .hero .container-hero .content-hero{
+.content-hero-image{
+    display: none;
+}
+
+.hero .container-hero .content-hero{
     position: absolute;
     display: grid;
     grid-template-columns: 183px 240px 183px;
     justify-content: center;
     align-items: center;
     color: var(--just-white);
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
-main .hero .container-hero .content-hero span{
+.hero .container-hero .content-hero span{
     font-size: 160px;
     font-weight: 500;
 }
 
-main .hero .view-more {
+.hero .view-more {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     gap: 12px;
-    padding-bottom: 30px;
+    padding-bottom: 130px;
     margin-left: 40px;
     transition: 1s;
 
@@ -96,7 +107,7 @@ main .hero .view-more i{
 }
 
 main .hero .view-more a{
-    color: var(--just-white);
+    color: black;
 }
 
 main .hero .view-more a:nth-child(1):hover{
@@ -117,22 +128,25 @@ main .content-product{
     flex-direction: column;
     background-color: var(--just-black);
     padding-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 main .content-product .title-content {
     margin: 24px 0 120px 0;
 }
-main .content-product .title-content h1{
+.content-product .title-content h1{
     font-size: 6.25rem;
     text-align: center;
     color: var(--just-white);
 }
 
-main .content-product img {
-    width: 600px;
+.content-product img {
+    width: 100%;
+    max-width: 700px;
+    object-fit: contain;
     margin: 0 auto;
 }
 
-main .content-product p{
+.content-product p{
     color: var(--just-white);
     padding-top: 120px;
     font-size: 2.1875rem;
@@ -143,7 +157,10 @@ main .content-product p{
     padding-bottom: 220px;
 }
 
-main .content-product-2 h1{
+.content-product-2{
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
+}
+.content-product-2 h1{
     text-align: center;
     font-size: 6.25rem;
     width:700px;
@@ -151,10 +168,8 @@ main .content-product-2 h1{
     padding-top: 150px;
     padding-bottom: 100px;
 }
-main .content-product-2 .container-info-products{
+.content-product-2 .container-info-products{
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, 1fr); */
-    /* grid-template-rows: repeat(auto-fill, 1fr); */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(2, 1fr) ;
     justify-items: center;
@@ -175,22 +190,25 @@ main .content-product-2 .container-info-products .info-products p {
     margin-bottom: 24px;
 }
 
-main .content-product-2 .container-info-products .info-products img {
-    width: 300px;
+.content-product-2  .info-products img {
+    width: 100%;
     object-fit: contain;
+    
 }
 
-main .content-product-2 .container-info-products .info-product-four img,
-main .content-product-2 .container-info-products .info-product-one img{
+.content-product-2 .container-info-products .info-product-four img,
+.content-product-2 .container-info-products .info-product-one img{
     width: 400px;
 }
 
 main .content-product-2 .container-info-products .info-product-two img {
     border-right: 1px solid var(--just-black);
+    max-width: 300px;
 }
 
 main .content-product-2 .container-info-products .info-product-three img {
     border-left: 1px solid var(--just-black);
+    max-width: 300px;
 }
 
 main .content-product-3{
@@ -205,27 +223,31 @@ main .content-product-3 .title-content-product-3{
     padding-top: 150px;
     padding-bottom: 200px;
 }
-main .content-product-3 .title-content-product-3 h1{
+.content-product-3 .title-content-product-3 h1{
     color: var(--just-white);
     font-size:  6.25rem;
     text-align: center;
 }
 
 main .content-product-3 img{
-    width: 1000px;
+    width: 100%;
+    max-width: 950px;
+    object-fit: contain;
     margin: 0 auto;
 }
 main .content-product-4 {
-    padding-bottom: 100px;
+    margin-bottom: 200px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
+
 }
-main .content-product-4 h1{
-    margin-top: 150px;
+.content-product-4 h1{
+    padding-top: 150px;
     font-size: 6.25rem;
     text-align: center;
     margin-bottom: 100px;
 }
 
-main .content-product-4 .container-content{
+.content-product-4 .container-content{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     justify-items: center;
@@ -234,8 +256,13 @@ main .content-product-4 .container-content{
     width: 90%;
     margin: 0 auto;
 }
+main .content-product-4 .container-content .image-content img{
+    width: 100%;
+    object-fit: contain;
 
-main .content-product-4 .container-content .text-content p{
+}
+
+.content-product-4 .container-content .text-content p{
     font-size: 2.5rem;
     width: 500px;
     padding-bottom: 24px;
@@ -246,7 +273,7 @@ main .content-product-5{
     padding-bottom: 200px;
 }
 
-main .content-product-5 h1{
+.content-product-5 h1{
     color: var(--just-white);
     padding-top: 150px;
     text-align: center;
@@ -254,7 +281,7 @@ main .content-product-5 h1{
     margin-bottom: 100px;
 }
 
-main .content-product-5 .container-main-content-p5{
+.content-product-5 .container-main-content-p5{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     justify-content: center;
@@ -263,15 +290,19 @@ main .content-product-5 .container-main-content-p5{
 
 }
 
-main .content-product-5 .container-main-content-p5 .image-content-5 img{
-    width: 600px;
+.content-product-5 .container-main-content-p5 .image-content-5 img{
+    width: 100%;
+    object-fit: contain;
 }
 
-main .content-product-5 .container-main-content-p5 .txt-content-5 p{
+.content-product-5 .container-main-content-p5 .txt-content-5 p{
     color: var(--just-white);
     font-size: 2rem;
     width: 500px;
     padding-bottom: 24px;
+    display: flex;
+    
+    
 }
 
 main .content-product-6{
@@ -280,6 +311,7 @@ main .content-product-6{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
 }
 
 main .content-product-6 .main-title-p6{
@@ -287,12 +319,16 @@ main .content-product-6 .main-title-p6{
     margin-bottom: 100px;
 }
 
-main .content-product-6 .main-title-p6 h1{
+.content-product-6 .main-title-p6 h1{
     font-size: 6.25rem;
 }
 
 main .content-product-6 img{
+    width: 100%;
+    max-width: 800px;
+    object-fit: contain;
     margin-bottom: 200px;
+
 }
 
 main .phase{
@@ -304,25 +340,13 @@ main .phase{
 }
 
 
-main .phase h1{
+.phase h1{
     color: var(--just-white);
     text-align: center;
     font-size: 9.375rem;
     letter-spacing: 6px;
 }
 
-/* main .section-images{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-    margin: 0 auto;
-    margin-top: 150px;
-}
-
-main .section-images img{
-    width: 100%;
-    object-fit: contain;
-} */
 
 /* FOOTER */
 
@@ -333,19 +357,90 @@ footer{
     justify-content: center;
     justify-items: center;
     align-items: center;
+    
     width: 100%;
 }
 
 footer .container-content-footer{
     display: grid;
     height: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
     align-items: center;
     justify-items: center;
+    width: 90%;
 }
 
+footer .container-content-footer .logo{
+    font-size: 50px;
+}
+footer .container-content-footer .buy-btn--footer{
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+footer .container-content-footer .buy-btn--footer:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+footer .container-content-footer .buy-btn--footer:hover:after {
+    transform: translate(0, 0);
+}
+
+footer .container-content-footer .buy-btn--footer:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+footer .container-content-footer .buy-btn--footer:hover {
+    outline: 0;
+}
+footer .container-content-footer .buy-btn--footer a{
+    text-decoration: none;
+    color: var(--just-black);
+}
+@media (min-width: 768px) {
+    footer .container-content-footer .buy-btn--footer {
+    padding: 0 40px;
+    }
+}
+footer .container-content-footer .social-media img{
+    padding-left: 20px;
+    width: 64px;
+}
 footer span{
     text-align: center;
     width: 100%;
 }
+

@@ -1,0 +1,21 @@
+
+
+main .content-product-2 .container-info-products .info-product-four img{
+    width: 300px;
+}
+
+main .content-product-2 .container-info-products .info-product-one img{
+    width: 350px;
+}
+
+main .content-product-3 img{
+    width: 800px;
+}
+
+main .content-product-5 .container-main-content-p5{
+    grid-template-rows: 1fr 700px;
+    grid-template-columns: none;
+}
+
+
+
