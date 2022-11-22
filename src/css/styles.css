@@ -333,7 +333,7 @@ main .content-product-6 img{
 
 main .phase{
     background-color: #000000;
-    height: 1000px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,7 +376,7 @@ footer .container-content-footer .logo{
 }
 footer .container-content-footer .buy-btn--footer{
     align-items: center;
-    background-color: #fee6e3;
+    background-color: var(--just-white);
     border: 2px solid #111;
     border-radius: 8px;
     text-decoration: none;
